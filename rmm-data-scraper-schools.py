@@ -12,7 +12,7 @@
 #This data scraper was written to automate gathering of information about what Birmingham regional schools are providing for tech education.
 
 #Chris's existing imports - may not be useful for this application
-import urllib
+import urllib #remove this at a later date. Used for samples, but wont use for my file.
 import urllib2
 import mechanize
 from bs4 import BeautifulSoup
@@ -24,7 +24,9 @@ import re
 
 #First, we need to retrieve and save to a .csv file the Alabama State Board of education dataset of regional schools, with contact info. Saved as a .csv file at http://web.alsde.edu/home/SchoolInfo/Default.aspx
 
-alsdeURL = 'https://web.alsde.edu/home/SchoolInfo/Default.aspx'
+alsdeURL = 'https://web.alsde.edu/EdDirToList/Default.aspx?listtype=principal&dataformat=csv' #this is the source file
+
+openurl(alsdeURL)
 
 #def searchAP(searchterm):
 #    newlinks = []
